@@ -16,7 +16,8 @@ export const InputField = ({ field, form: _, ...props }) => {
 
 export const ErrorField = ({ field, form: _, ...props }) => {
     return (
-      <div className="form-group" style={{ color: "red "}}>
+      <div className="m-1"
+      style={{ color: "red "}}>
           {props.errors}
       </div>
     );

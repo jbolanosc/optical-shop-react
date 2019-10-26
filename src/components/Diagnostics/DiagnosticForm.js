@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from "yup";
 import { InputField, ErrorField } from "../fields/inputField";
+import * as Yup from "yup";
 
 const SignupSchema = Yup.object().shape({
   firstname: Yup.string()
@@ -25,9 +25,9 @@ const SignupSchema = Yup.object().shape({
     .required("Phone Required")
 });
 
-const PatientForm = () => (
+const DiagnosticForm = () => (
   <div className="container-fluid">
-    <h2 className="m-1">Patient Registration</h2>
+    <h2 className="m-1">Diagnostic Registration</h2>
     <Formik
       onSubmit={data => {
         console.log(data);
@@ -104,4 +104,4 @@ const PatientForm = () => (
   </div>
 );
 
-export default PatientForm;
+export default DiagnosticForm;
